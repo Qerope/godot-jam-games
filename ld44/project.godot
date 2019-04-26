@@ -1,0 +1,25 @@
+config_version=4
+
+[application]
+
+config/name="ld44"
+run/main_scene="res://Main.tscn"
+
+[input]
+
+move_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"device":0,"scancode":65) ]
+}
+move_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"device":0,"scancode":68) ]
+}
+move_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"device":0,"scancode":87) ]
+}
+move_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"device":0,"scancode":83) ]
+}
