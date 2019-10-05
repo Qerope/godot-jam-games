@@ -1,0 +1,6 @@
+config_version=4
+
+[application]
+
+config/name="ld45"
+run/main_scene="res://Main.tscn"
