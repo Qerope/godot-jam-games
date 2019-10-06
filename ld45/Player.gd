@@ -11,7 +11,7 @@ func _physics_process(delta):
 	velocity.x = dir * 160
 	if abilities.jump and is_on_floor() and Input.is_action_just_pressed("ui_up"):
 		velocity.y = JUMP
-	velocity = move_and_slide(velocity, Vector2.UP)
+	velocity = move_and_slide(velocity, Vector2.UP, true)
 
 func unlock(name):
 	abilities[name] = true
