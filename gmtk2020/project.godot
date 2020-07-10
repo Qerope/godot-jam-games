@@ -1,0 +1,6 @@
+config_version=4
+
+[application]
+
+config/name="gmtk2020"
+run/main_scene="res://Game.tscn"
