@@ -9,3 +9,10 @@ func _input(event):
 func point_for(player):
 	score[player] += 1
 	$HUD/Score.text = "%d : %d" % score
+
+func shake(amount):
+	var tween = $Tween
+	tween.interpolate_property($Camera2D, "offset", Vector2(amount, amount), Vector2.ZERO,
+			0.25, Tween.TRANS_ELASTIC, Tween.EASE_OUT)
+	tween.start()
+	$Hit.play()
