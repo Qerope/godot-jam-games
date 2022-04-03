@@ -8,3 +8,6 @@ func _process(delta):
 	position.y = 600 - level
 	if level > 520:
 		get_tree().change_scene("res://GameOver.tscn")
+
+func bail(amount):
+	level = max(0.0, level - amount)
