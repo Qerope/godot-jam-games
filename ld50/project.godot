@@ -4,4 +4,3 @@ config_version=4
 
 config/name="ld50"
 run/main_scene="res://Main.tscn"
-config/features=PoolStringArray( "3.4" )

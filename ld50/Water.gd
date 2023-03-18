@@ -7,7 +7,7 @@ func _process(delta):
 	level += rise_per_second * delta
 	position.y = 600 - level
 	if level > 520:
-		get_tree().change_scene("res://GameOver.tscn")
+		get_tree().change_scene_to_file("res://GameOver.tscn")
 
 func bail(amount):
 	level = max(0.0, level - amount)
