@@ -17,4 +17,5 @@ func can_see(p: Node2D) -> bool:
 	var to_p := p.global_position - global_position
 	if to_p.length() > 180.0 or abs(to_p.angle_to(velocity)) > deg_to_rad(35):
 		return false
-	return true
+	var q := PhysicsRayQueryParameters2D.create(global_position, p.global_position, 1)
+	return get_world_2d().direct_space_state.intersect_ray(q).is_empty()
